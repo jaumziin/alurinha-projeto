@@ -1,0 +1,59 @@
+/* FLEXBOX STYLIZATION HEADER */
+
+.cabecalhoPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.container .cabecalhoPrincipal-nav {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FLEXBOX STYLIZATION NAVMAP */
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-flow: column wrap;
+    height: 255px
+}
+
+
+
+
+
+
+
+
+/* FLEXBOX STYLIZATION FOOTER */
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+} 
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
