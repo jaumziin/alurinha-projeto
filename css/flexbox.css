@@ -1,3 +1,9 @@
+@media screen and (max-width: 350px) {
+    .cabecalhoPrincipal, .cabecalhoPrincipal .container, .cabecalhoPrincipal-nav, .conteudoPrincipal, .conteudoPrincipal .container, .conteudoPrincipal-cursos, .videoSobre, .videoSobre .container, .videoSobre-sobre, .rodapePrincipal, .rodapePrincipal .container, .rodapePrincipal-navMap, .rodapePrincipal-navMap-list, .rodapePrincipal-patrocinadores, .rodapePrincipal-patrocinadores .container, .rodapePrincipal-patrocinadores-list, .rodapePrincipal-contatoForm, .rodapePrincipal-contatoForm-fieldset  {
+        max-width: 350px;
+    }
+}
+
 /* FLEXBOX STYLIZATION HEADER */
 
 .cabecalhoPrincipal .container {
@@ -11,29 +17,22 @@
     display: flex;
 }
 
+/* FLEXBOX STYLIZATION COURSES */
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-flow: row wrap;
+}
 
-
-
-
-
-
-
-
-
-
-
+.conteudoPrincipal-cursos-link {
+    width: 20%;
+}
 
 /* FLEXBOX STYLIZATION NAVMAP */
 .rodapePrincipal-navMap-list {
     display: flex;
     flex-flow: column wrap;
-    height: 255px
+    height: 255px;
 }
-
-
-
-
-
 
 
 
