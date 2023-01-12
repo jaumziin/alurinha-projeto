@@ -1,7 +1,47 @@
-@media screen and (max-width: 350px) {
-    .cabecalhoPrincipal, .cabecalhoPrincipal-titulo, .cabecalhoPrincipal .container, .cabecalhoPrincipal-nav, .conteudoPrincipal, .conteudoPrincipal .container, .conteudoPrincipal-cursos, .videoSobre, .videoSobre .container, .videoSobre-sobre, .rodapePrincipal, .rodapePrincipal .container, .rodapePrincipal-navMap, .rodapePrincipal-navMap-list, .rodapePrincipal-patrocinadores, .rodapePrincipal-patrocinadores .container, .rodapePrincipal-patrocinadores-list, .rodapePrincipal-contatoForm, .rodapePrincipal-contatoForm-fieldset {
-    width: auto;
+/* !!! FLEXBOX STYLIZATION MOBILE !!! */
+
+@media screen and (max-width: 768px) {
+    .cabecalhoPrincipal .container {
+        flex-direction: column;
     }
+    
+    .cabecalhoPrincipal-nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+    }
+    
+    .conteudoPrincipal-cursos-link:last-child {
+        margin-bottom: 10px;
+    }
+    
+    .rodapePrincipal-patrocinadores .container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .rodapePrincipal-patrocinadores-list {
+        width: 100%;
+        margin: 0 0 0 0;
+        justify-content: space-around;
+    }
+
+    .rodapePrincipal-contatoForm {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    .rodapePrincipal-navMap-list {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
 }
 
 /* FLEXBOX STYLIZATION HEADER */
@@ -15,6 +55,7 @@
 
 .container .cabecalhoPrincipal-nav {
     display: flex;
+    border: none;
 }
 
 /* FLEXBOX STYLIZATION COURSES */
@@ -53,7 +94,7 @@
 .rodapePrincipal-navMap-list {
     display: flex;
     flex-flow: column wrap;
-    height: 255px;
+    height: px;
 }
 
 
@@ -68,15 +109,23 @@
 
 .rodapePrincipal-patrocinadores-list {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
-    width: 70%;
-    margin-right: 5%;
+    
 } 
 
 .rodapePrincipal-contatoForm-fieldset {
     display: flex;
 }
 
-/* !!! FLEXBOX STYLIZATION WEBSITE MOBILE !!! */
+/* !!!  FLEXBOX STYLIZATION WEBSITE MOBILE !!! */
 
+
+
+/* FLEXBOX STYLIZATION NAVMAP COURSES */
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-flow: column nowrap;
+}
